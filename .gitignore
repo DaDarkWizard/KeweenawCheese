@@ -1,0 +1,10 @@
+.vs/*
+.vs/
+Properties/*
+Properties/
+*/bin/
+*/bin/*
+*/obj/
+*/obj/*
+*/appsettings.json
+*/appsettings.Development.json
