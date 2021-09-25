@@ -57,10 +57,12 @@ namespace KeweenawCheeseSite.Data
             if (parsed)
             {
                 var user = await context.DiscordUsers.FirstOrDefaultAsync(x => x.Id == intId);
+                await context.DisposeAsync();
                 return user;
             }
             else
             {
+                await context.DisposeAsync();
                 return null;
             }
         }
